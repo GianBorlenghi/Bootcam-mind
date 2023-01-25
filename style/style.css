@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-image: url("../assets/images/design1_image1.jpg");
+    background-size: cover;
+    background-position: center;
+    margin:0 auto;
+    margin-top:10px;
+    border:1px solid #000;
+    width: 70%;
+    padding:30px;   
+}
+
+header > h1{
+    font-size: 50px;
+    text-align: center;
+    color:#45b;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.subtitle-web{
+    text-align: center;
+    border:1px solid black;
+    margin:0 auto;
+    width: 73%;
+    margin-top:5px;
+    background-color: #000;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:10px;
+}
+
+span > img{
+    width: 70px;
+    float:right;
+    margin-right:50px;
+    margin-top :-25px;
+}
+
+aside{
+    float:left;
+    margin-top:60px;
+    margin-left:20px;
+}
+
+aside >a,aside>span {
+    display:block;
+    margin-top:40px;
+    text-align: justify;
+}
+
+section>article{
+    margin-left:200px;
+}
+
+article> h4{
+    margin-top:30px;
+}
