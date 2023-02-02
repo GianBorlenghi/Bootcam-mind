@@ -3,13 +3,10 @@
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-
 }
 :root{
     --color-h:#aaa;
 }
-
-
 
 a{
     text-decoration: none;
@@ -24,8 +21,7 @@ a:hover{
     
 }
 
-header{
-
+.container-header{
     background-image: url("../assets/images/design1_image1.jpg");
     background-size: cover;
     background-position: center;
@@ -36,10 +32,10 @@ header{
     width: 70%;
     padding:30px;   
     height:200px;
-    
+  
 }
 
-header > h1{
+.title-header{
     font-size: 50px;
     color:#fff;
     font-weight: bold;
@@ -52,7 +48,7 @@ header > h1{
     border:1px solid #777;
     margin:0 auto;
     width: 70%;
-    margin-top:5px;
+    margin-top :0;
     background-color: #000;
     color:var(--color-h);
     font-family: Arial, Helvetica, sans-serif;
@@ -60,7 +56,7 @@ header > h1{
 }
 
 
-span > img{
+.logo{
     width: 70px;
     float:right;
     margin-right:50px;
@@ -69,6 +65,7 @@ span > img{
 }
 
 .nav-bar_left{
+    z-index: 10;
     background-color:var(--color-h);
     border-top:1px solid #000;
     border-right: 1px solid #666;
@@ -76,28 +73,27 @@ span > img{
     float:left;
     padding-left:30px;
     width: 228px;
+    
 }
 
 .nav-bar_left a, .nav-bar_left span {
+  
     display:block;
     margin-top:50px;
     text-align: justify;
 }
 
 section{
-    display: inline;
-
+   display:inline; 
 }
 
-section> p,section>h2 {
+section > p,section>h2 {
     margin-left: 230px;
-}
-
-p{
-    margin-top:30px;
     width: 1050px;
 }
-h2{
+
+
+section h2{
     margin-top:30px;
     color:var(--color-h);
 }
@@ -109,3 +105,149 @@ article> h4{
     margin-top:30px;
     color:var(--color-h);
 }
+.paragraph{
+    margin-top:30px;
+    width: 1050px;
+}
+
+
+
+#p-main{
+    margin-top:15px;
+    text-align: center;
+}
+.rules-header{
+    width: 50%;
+    margin:0 auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.list-rules{
+    background-color: #ddd;
+    margin-top:30px;
+    padding:15px;
+   border:1px solid black;
+   border-radius: 10px;
+}
+
+.list-rules dt:nth-child(n+1){
+    margin-top:30px;
+}
+.list-rules dt:hover ~ dd{
+    background-color: #fff;
+    color:#b31;
+    padding:5px;
+    border-radius: 5px;
+    transition-duration: 1s;
+}
+
+
+.list-rules dd{
+    margin-top:15px;
+    text-indent: 40px;
+}
+
+.list-rules ol{
+    margin-top:30px;
+    padding:0 20px;
+    text-align: justify;
+}
+
+.list-rules li>h4{
+    display: inline;
+}
+.list-rules ol li:nth-child(n+2){
+    margin-top:20px;
+}
+
+.list-rules li>ol{
+    list-style-type: lower-alpha;
+}
+
+.list-rules ul{
+    margin-top:10px;
+    margin-left:60px;
+    text-indent: 0;
+    list-style: circle;
+}
+
+
+/* ------------------------- */
+
+
+.header-games{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+   padding:30px;
+   border:1px solid black;
+   margin-top: 5px;
+   height: 100px;
+   background-color: #a8b;
+   box-shadow: 2px 1px 0 0 ;
+   color: #333;
+}
+.main-games,.main-rules{
+    width: 50%;
+    margin:0 auto;
+    }
+.subtitles-games{
+    box-shadow: 2px 1px;
+        padding:15px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+.subtitles-games p:nth-child(2){
+   
+    margin-top:10px;
+    text-decoration: underline;
+    font-style: italic;
+    text-align: left;
+
+}
+table{
+    margin:0 auto;
+    text-align:center;
+    padding:10px;   
+}
+
+table caption{
+    margin-top:20px;
+    font-size:30px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+
+table th{
+    background-color: #aaa;
+    padding:30px;
+    font-style:italic;
+}
+
+table th:hover ~ td{
+  text-decoration: underline;
+  font-style: italic;
+  border-bottom:3px solid #000;
+}
+
+
+
+table tr{
+    padding:30px;
+    background-color:#a87;
+    font-weight: bold;
+}
+table td{
+    width: 250px;
+    height: 75px;
+    padding:20px;
+    
+}
+tr:nth-child(even){
+  background-color:#b9a;  
+}
+
+
