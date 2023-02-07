@@ -4,6 +4,8 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+
+/* Estilos index,about,contact. */
 :root{
     --color-h:#aaa;
 }
@@ -26,10 +28,9 @@ a:hover{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin:0 auto;
     margin-top:10px;
     border:1px solid #000;
-    width: 70%;
+    width: 100%;
     padding:30px;   
     height:200px;
   
@@ -47,7 +48,7 @@ a:hover{
     text-align: center;
     border:1px solid #777;
     margin:0 auto;
-    width: 70%;
+    width: 100%;
     margin-top :0;
     background-color: #000;
     color:var(--color-h);
@@ -116,6 +117,12 @@ article> h4{
     margin-top:15px;
     text-align: center;
 }
+
+
+
+
+/* --------------------------------------------------------------------------------- */
+/* Estilos rules */
 .rules-header{
     width: 50%;
     margin:0 auto;
@@ -177,9 +184,9 @@ article> h4{
 
 /* ------------------------- */
 
-
+/* Estilos games */
 .header-games{
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     text-align: center;
    padding:30px;
@@ -191,7 +198,7 @@ article> h4{
    color: #333;
 }
 .main-games,.main-rules{
-    width: 50%;
+    width: 70%;
     margin:0 auto;
     }
 .subtitles-games{
@@ -209,9 +216,8 @@ article> h4{
 
 }
 table{
-    margin:0 auto;
     text-align:center;
-    padding:10px;   
+    width: 100%;        
 }
 
 table caption{
@@ -223,7 +229,7 @@ table caption{
 
 table th{
     background-color: #aaa;
-    padding:30px;
+    padding:20px;
     font-style:italic;
 }
 
@@ -236,18 +242,148 @@ table th:hover ~ td{
 
 
 table tr{
-    padding:30px;
+
     background-color:#a87;
     font-weight: bold;
+
 }
-table td{
-    width: 250px;
-    height: 75px;
-    padding:20px;
-    
-}
+
 tr:nth-child(even){
   background-color:#b9a;  
 }
 
+
+tbody tr td:nth-child(5){
+    padding:0;
+    height: 150px;
+    width: 510px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.2rem;
+
+}
+
+tbody tr td:nth-child(3){
+    width: 40%; 
+   }
+   
+
+tbody tr td:nth-child(5) h4{
+ position:absolute;
+}
+/* Estilos registration-form. */
+
+
+#title{
+    margin-top:10px;
+    text-align:center;
+}
+
+.main-registration_form{
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    
+}
+fieldset{
+    border:none;
+}
+
+legend{
+    margin-bottom:20px;
+}
+
+.registration-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    margin:0 auto;
+    gap:1rem;
+    padding:30px;
+}
+.registration-form label{
+    font-weight: bold;
+}
+.registration-form input{
+    outline:none;
+    font-size: 15px;
+    border:none;
+    border-bottom:1px solid #000;
+    width: 200px;
+    padding-right:5px ;
+    background-color: transparent;
+}
+label{
+    padding-right:5px ;
+    
+}
+
+#street-address{
+    width: 540px;
+}
+#city{
+    width: 300px;
+}
+
+#zip-code{
+    width: 227px;
+}
+
+.registration-form fieldset:nth-child(7) label:nth-child(n+2), .registration-form fieldset:nth-child(8) label:nth-child(n+2),.registration-form fieldset:nth-child(10) label:nth-child(n){
+    font-weight: normal;
+    cursor: pointer;
+}
+.registration-form fieldset:nth-child(7) input, .registration-form fieldset:nth-child(8) input{
+    margin:0;
+    width: 20px;
+    padding-right: 0;
+    cursor: pointer;
+
+}
+.registration-form fieldset:nth-child(9),.registration-form fieldset:nth-child(10),.registration-form fieldset:nth-child(11){
+height: 130px;
+width:1200px;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+gap:0.2rem;
+padding: 0 5px;
+}
+
+.registration-form fieldset:nth-child(9) label,.registration-form fieldset:nth-child(11) label{
+
+    font-weight: normal;
+}
+
+.registration-form fieldset:nth-child(10){
+    height: 90px;
+}
+.registration-form legend>span{
+    font-weight: bold;
+}
+
+.registration-form fieldset:nth-child(9) input,.registration-form fieldset:nth-child(10) input,.registration-form fieldset:nth-child(11) input{    
+    width: 20px;
+}
+.registration-form fieldset:nth-child(12) input{
+    margin-top:25px;
+}
+
+#btn-registrar{
+    margin:0 auto;
+    width: 140px;
+    padding:10px;
+    font-size: 15px;
+    border:none;
+    background-color: #15c;
+    color:#fff;
+    box-shadow: none;
+    cursor: pointer;
+}
+#btn-registrar:hover{
+    box-shadow: 2px 2px #000;
+    border-radius: 5px;
+}
 
