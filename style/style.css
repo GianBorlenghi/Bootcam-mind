@@ -272,6 +272,27 @@ tbody tr td:nth-child(3){
 tbody tr td:nth-child(5) h4{
  position:absolute;
 }
+
+footer{
+    margin: 20px auto;
+    width: 70%;
+    border-top:2px solid #fff;
+    padding-top:10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.more-info{
+    margin-top: 15px;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap:0.9rem;
+}
+
+
+
 /* Estilos registration-form. */
 
 
@@ -298,7 +319,7 @@ legend{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 50%;
+    width: 55%;
     margin:0 auto;
     gap:1rem;
     padding:30px;
@@ -386,4 +407,3 @@ padding: 0 5px;
     box-shadow: 2px 2px #000;
     border-radius: 5px;
 }
-

@@ -209,3 +209,101 @@ tbody tr td:nth-child(5) h4:nth-child(3){
     color:red;
      left: 510px;
    }
+
+   footer{
+    width: 610px;
+    font-size: 10px;
+    flex-direction: column;
+    gap:0.8rem;
+    padding-left:10px;
+}
+
+.more-info{
+    font-size: 12px;
+    gap:0.9rem;
+    padding-left:10px;
+}
+.more-info p {
+    width: 100%;
+}
+
+/*--------------------------------------------*/
+#title{
+    text-align:center;
+    padding-left:25px;
+}
+
+.registration-form{
+    width: 90%;
+    padding-left:0px;
+}
+.registration-form input{
+    width: 250px;
+}
+label{
+    padding-right:100px ;
+    
+}
+
+#street-address{
+    width: 250px;
+}
+#city{
+    width: 250px;
+}
+
+#zip-code{
+    width: 250px;
+}
+
+.registration-form fieldset:nth-child(7) label:nth-child(1), .registration-form fieldset:nth-child(8) label:nth-child(1){
+    display: block;
+}
+
+.registration-form fieldset:nth-child(7) label:nth-child(n+2), .registration-form fieldset:nth-child(8) label:nth-child(n+2){
+
+padding-right: 5px;
+padding-left:10px;
+}
+
+.registration-form fieldset:nth-child(9),.registration-form fieldset:nth-child(10),.registration-form fieldset:nth-child(11){
+height: 210px;
+flex-direction: column;
+
+}
+
+.registration-form fieldset:nth-child(10){
+    height: 100px;
+}
+.registration-form fieldset:nth-child(12) input{
+    margin-top:15px;
+}
+
+.registration-form fieldset:nth-child(12) label{
+   padding-right:5px;
+}
+.registration-form fieldset:nth-child(12) label:nth-child(n){
+    display: block;
+}
+.registration-form p {
+    padding:0;
+    margin-bottom:20px;
+    text-align: justify;
+    width: 100%;
+}
+
+#btn-registrar{
+    margin:0px auto;
+    width: 100px;
+    padding:5px;
+    font-size: 13px;
+    border:none;
+    background-color: #15c;
+    color:#fff;
+
+}
+#btn-registrar:hover{
+    box-shadow: 2px 2px #000;
+    border-radius: 5px;
+}
+

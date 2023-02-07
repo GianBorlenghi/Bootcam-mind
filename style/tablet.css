@@ -100,3 +100,22 @@ width: 100%;
         color:#000;
          left: 800px;
        }
+
+       footer{
+        width: 940px;
+        font-size: 10px;
+        flex-direction: column;
+        gap:0.8rem;
+        padding-left:10px;
+        margin-left:0;
+    }
+    
+    .more-info{
+        font-size: 12px;
+        gap:0.9rem;
+        padding-left:10px;
+    }
+    .more-info p {
+        width: 100%;
+    }
+    
